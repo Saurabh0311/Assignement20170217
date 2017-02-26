@@ -1,0 +1,24 @@
+import org.openqa.selenium.WebDriver;
+ 
+import org.openqa.selenium.firefox.FirefoxDriver;
+ 
+ 
+ 
+Launch web url by selenium 3.0 in "Firefox"
+Steps: Firstly I have installed Java 8 and then download Gecko driver.
+public class Hello {
+	
+ public static void main(String[] args) {
+ //Firstly Installed Java 8 and then download gecko driver by this link:https://github.com/mozilla/geckodriver/releases/tag/v0.9.0//
+ //set path of Gecko driver in System.setproperty//
+System.setProperty("webdriver.gecko.driver","C:\\Users\\saurabh\\Desktop\\Fav songs\\geckodriver.exe");
+             
+            WebDriver driver = new FirefoxDriver();
+ 
+            driver.get("http://www.facebook.com");
+ 
+            driver.quit();
+ 
+      }
+ 
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
